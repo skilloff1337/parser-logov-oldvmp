@@ -1,12 +1,13 @@
-﻿using System;
+﻿using ParsesVMPLogs.Scripts;
 
 namespace ParsesVMPLogs
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SearchLastNickName.LoadChangedNicknames(); 
+            MainScript.Start();
         }
     }
 }
